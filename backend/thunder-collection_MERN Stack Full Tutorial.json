@@ -1,0 +1,89 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "MERN Stack Full Tutorial",
+    "collectionId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+    "dateExported": "2024-08-11T01:17:07.745Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "21e99982-8df9-49ca-a430-c367eeef5008",
+            "colId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+            "containerId": "",
+            "name": "Get All Users",
+            "url": "http://localhost:3500/users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-08-11T00:38:26.386Z",
+            "modified": "2024-08-11T00:38:48.966Z",
+            "headers": []
+        },
+        {
+            "_id": "b3ad7301-6ca3-4da0-8f37-7207ccbb58e4",
+            "colId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+            "containerId": "",
+            "name": "Create New User",
+            "url": "http://localhost:3500/users",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-11T00:43:44.303Z",
+            "modified": "2024-08-11T00:58:19.459Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Dave\",\n  \"password\": \"!Hb12345\",\n  \"roles\": [\"Employee\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2ac26c0b-bee8-4483-bb97-888b47e8148a",
+            "colId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+            "containerId": "",
+            "name": "Update User",
+            "url": "http://localhost:3500/users",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2024-08-11T00:52:17.463Z",
+            "modified": "2024-08-11T01:00:03.370Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"66b80cbb95769b2e33ccd358\",\n  \"username\": \"Dave\",\n  \"roles\": [\n    \"Employee\"\n  ],\n  \"active\": false,\n  \"__v\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e0be2fd3-7a98-47b4-bf82-f111c3638e00",
+            "colId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+            "containerId": "",
+            "name": "Delete User",
+            "url": "http://localhost:3500/users",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-11T01:02:09.066Z",
+            "modified": "2024-08-11T01:08:42.445Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"66b80efa4de3847e19512199\",\n  \"username\": \"Dave\",\n  \"roles\": [\n    \"Employee\"\n  ],\n  \"active\": true,\n  \"__v\": 0\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "MCp8_qv4774FiWR8puErgQfS7W6NAn2CwydD_FQWgpljyhjbYltHFalY4IIvsVynEA5CQLRjLXhEVkEpHANa7g"
+}
