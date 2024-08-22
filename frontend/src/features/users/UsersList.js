@@ -1,5 +1,5 @@
-import { useGetUsersQuery } from "./usersApiSlice";
-import User from "./User";
+import { useGetUsersQuery } from './usersApiSlice'
+import User from './User'
 
 const UsersList = () => {
   const {
@@ -8,26 +8,26 @@ const UsersList = () => {
     isSuccess,
     isError,
     error,
-  } = useGetUsersQuery(undefined, {
+  } = useGetUsersQuery('usersList', {
     pollingInterval: 60000,
     refetchOnFocus: true,
     refetchOnMountOrArgChange: true,
-  });
+  })
 
-  let content;
+  let content
 
-  if (isLoading) content = <p>Loading...</p>;
+  if (isLoading) content = <p>Loading...</p>
 
   if (isError) {
-    content = <p className="errmsg">{error?.data?.message}</p>;
+    content = <p className="errmsg">{error?.data?.message}</p>
   }
 
   if (isSuccess) {
-    const { ids } = users;
+    const { ids } = users
 
     const tableContent = ids?.length
       ? ids.map((userId) => <User key={userId} userId={userId} />)
-      : null;
+      : null
 
     content = (
       <table className="table table--users">
@@ -46,9 +46,9 @@ const UsersList = () => {
         </thead>
         <tbody>{tableContent}</tbody>
       </table>
-    );
+    )
   }
 
-  return content;
-};
-export default UsersList;
+  return content
+}
+export default UsersList
