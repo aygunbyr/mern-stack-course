@@ -1,15 +1,24 @@
-import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { selectUserById } from "./usersApiSlice";
-import EditUserForm from "./EditUserForm";
+import { useParams } from 'react-router-dom'
+import EditUserForm from './EditUserForm'
+import { useGetUsersQuery } from './usersApiSlice'
+import PulseLoader from 'react-spinners/PulseLoader'
+import useTitle from '../../hooks/useTitle'
 
 const EditUser = () => {
-  const { id } = useParams();
+  useTitle('techNotes: Edit User')
 
-  const user = useSelector((state) => selectUserById(state, id));
+  const { id } = useParams()
 
-  const content = user ? <EditUserForm user={user} /> : <p>Loading...</p>;
+  const { user } = useGetUsersQuery('usersList', {
+    selectFromResult: ({ data }) => ({
+      user: data?.entities[id],
+    }),
+  })
 
-  return content;
-};
-export default EditUser;
+  if (!user) return <PulseLoader color={'#FFF'} />
+
+  const content = <EditUserForm user={user} />
+
+  return content
+}
+export default EditUser
