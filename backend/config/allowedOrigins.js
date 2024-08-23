@@ -1,7 +1,6 @@
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://www.dandrepairshop.com",
-  "https://dandrepairshop.com",
-];
+  'http://localhost:3000', // must be removed on deployment for production
+  'https://technotes.onrender.com',
+]
 
-module.exports = allowedOrigins;
+module.exports = allowedOrigins
