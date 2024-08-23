@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "MERN Stack Full Tutorial",
     "collectionId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
-    "dateExported": "2024-08-22T09:29:55.750Z",
+    "dateExported": "2024-08-23T09:36:30.769Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -15,11 +15,11 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-08-11T00:38:26.386Z",
-            "modified": "2024-08-22T09:29:42.953Z",
+            "modified": "2024-08-23T09:34:47.100Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkRhbkQiLCJyb2xlcyI6WyJFbXBsb3llZSIsIk1hbmFnZXIiLCJBZG1pbiJdfSwiaWF0IjoxNzI0MzE4ODYwLCJleHAiOjE3MjQzMTk3NjB9.y5k6g8D0UOGJIeMjmqqH5N_bOlpirRleDwddC95L6H8"
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkRhbkQiLCJyb2xlcyI6WyJFbXBsb3llZSIsIk1hbmFnZXIiLCJBZG1pbiJdfSwiaWF0IjoxNzI0NDA1Njc1LCJleHAiOjE3MjQ0MDY1NzV9.Lzpq3W_ULd6wa0TL_kmV1Stoa5xcEdzjK1AH1P4eV08"
                 }
             ]
         },
@@ -139,7 +139,29 @@
                     "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkRhbkQiLCJyb2xlcyI6WyJFbXBsb3llZSIsIk1hbmFnZXIiLCJBZG1pbiJdfSwiaWF0IjoxNzI0MzE4ODYwLCJleHAiOjE3MjQzMTk3NjB9.y5k6g8D0UOGJIeMjmqqH5N_bOlpirRleDwddC95L6H8"
                 }
             ]
+        },
+        {
+            "_id": "e98301fe-41ea-4593-b031-c28d93b57f40",
+            "colId": "6aa2b285-06a3-4e78-b0f9-c378e68e1a7d",
+            "containerId": "",
+            "name": "Create New Note",
+            "url": "http://localhost:3500/notes",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-08-23T09:33:25.796Z",
+            "modified": "2024-08-23T09:36:20.715Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkRhbkQiLCJyb2xlcyI6WyJFbXBsb3llZSIsIk1hbmFnZXIiLCJBZG1pbiJdfSwiaWF0IjoxNzI0NDA1Njc1LCJleHAiOjE3MjQ0MDY1NzV9.Lzpq3W_ULd6wa0TL_kmV1Stoa5xcEdzjK1AH1P4eV08"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\": \"66c6f8da3a98913de6b91908\",\n  \"title\": \"New Note Title\",\n  \"text\": \"New Note Text\"\n}",
+                "form": []
+            }
         }
     ],
-    "ref": "MCp8_qv4774FiWR8puErgUObgZSVaFhIKI7GrMuN90BTTOap-qKOFUcl-r9KFkXOM_L4871HPPe_jDMcO_Uh8A"
+    "ref": "MCp8_qv4774FiWR8puErgVvAqWUkSBMYPlR7MEVsVEscQ-uxhfnvhZ58I8mdPYkAc1EUOxJmvv-ljTWiZcte5w"
 }
